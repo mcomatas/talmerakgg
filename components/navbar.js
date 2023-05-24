@@ -70,6 +70,7 @@ const Navbar = props => {
                                     as={IconButton}
                                     icon={<HamburgerIcon />}
                                     variant="outline"
+                                    colorScheme='black'
                                     aria-label="Options"
                                 />
                                 <MenuList>

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, Image } from '@chakra-ui/react'
 import Navbar from '../navbar.js'
 
 const Main = ( { children, router } ) => {
@@ -12,7 +12,7 @@ const Main = ( { children, router } ) => {
 
             <Navbar />
 
-            <Container>
+            <Container maxW="container.md">
                 {children}
             </Container>
         </Box>
