@@ -5,11 +5,11 @@ import {
     Divider,
     Link,
     SimpleGrid,
-    Stack,
     Menu,
     MenuItem,
     MenuList,
-    MenuButton
+    MenuButton,
+    IconButton
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoYoutube, IoLogoTwitch, IoLogoTwitter, IoLogoTiktok } from 'react-icons/io5'
@@ -40,10 +40,6 @@ const Navbar = props => {
             zIndex={2}
             {...props}
         >
-            
-
-            
-            Navbar
             <Container
                 dislpay="flex"
                 align="center"
@@ -52,7 +48,7 @@ const Navbar = props => {
                 justify="space-between"
                 wrap="wrap"
             >
-                <SimpleGrid columns={4} display={{ base: 'none', md: 'flex' }}>
+                <SimpleGrid columns={4} spacing={150} display={{ base: 'none', md: 'flex' }}>
                     <LinkImage href="https://www.tiktok.com/@talmerak" path={path} target="_blank">
                         <IoLogoTiktok size={56} color='black' />
                     </LinkImage>
@@ -66,6 +62,34 @@ const Navbar = props => {
                         <IoLogoTwitter size={56} color='black' />
                     </LinkImage>
                 </SimpleGrid>
+
+                    <Box flex={1} align="right">
+                        <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+                            <Menu isLazy id="navbar-menu">
+                                <MenuButton
+                                    as={IconButton}
+                                    icon={<HamburgerIcon />}
+                                    variant="outline"
+                                    aria-label="Options"
+                                />
+                                <MenuList>
+                                    <MenuItem as={NextLink} href="https://www.tiktok.com/@talmerak" target="_blank">
+                                        TikTok
+                                    </MenuItem>
+                                    <MenuItem as={NextLink} href="https://www.youtube.com/channel/UCGbXokwBVgCnNWTkOHsEi1g" target="_blank">
+                                        YouTube
+                                    </MenuItem>
+                                    <MenuItem as={NextLink} href="https://www.twitch.tv/talmerak" target="_blank">
+                                        Twitch
+                                    </MenuItem>
+                                    <MenuItem as={NextLink} href="https://twitter.com/talmerak_" target="_blank">
+                                        Twitter
+                                    </MenuItem>
+                                </MenuList>
+                            </Menu>
+                        </Box>
+                    </Box>
+
             </Container>
 
             <Divider borderColor='black' />
