@@ -11,7 +11,7 @@ const Logo = () => {
     return (
         <MotionBox
             animate={{
-                scale: [1, 1.05, 1]
+                //scale: [1, 1.05, 1]
             }}
             transition={{
                 duration: 2,
@@ -20,7 +20,7 @@ const Logo = () => {
                 ease: "easeInOut"
             }}
         >
-            <Image src="/talmerak.png" alt="logo" width={1000} height={1000} />
+            <Image src="/talmerak.png" alt="logo" width={1000} height={1000} position="relative" />
         </MotionBox>
     )
 }
