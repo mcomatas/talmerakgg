@@ -15,7 +15,7 @@ const Page = () => {
         <Layout>
             <Logo />
             <Container align="center">
-                <SimpleGrid w="50%" columns={[1,1,2]} gap={9} textAlign="center">
+                <SimpleGrid columns={[1,1,2]} gap={9} textAlign="center">
                     <LinkItem href="/videos">
                         VIDEOS
                     </LinkItem>

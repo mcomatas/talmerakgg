@@ -1,3 +1,4 @@
+import { forwardRef } from 'react'
 import NextLink from 'next/link'
 import {
     Box,
@@ -28,6 +29,10 @@ const LinkImage = ( { href, path, target, children, ...props } ) => {
         </Link>
     )
 }
+
+const MenuLink = forwardRef(( props, ref ) => (
+    <Link ref={ref} as={NextLink} {...props} />
+))
 
 const Navbar = props => {
     const path = props
@@ -74,16 +79,16 @@ const Navbar = props => {
                                     aria-label="Options"
                                 />
                                 <MenuList>
-                                    <MenuItem as={NextLink} href="https://www.tiktok.com/@talmerak" target="_blank">
+                                    <MenuItem as={MenuLink} href="https://www.tiktok.com/@talmerak" target="_blank">
                                         TikTok
                                     </MenuItem>
-                                    <MenuItem as={NextLink} href="https://www.youtube.com/channel/UCGbXokwBVgCnNWTkOHsEi1g" target="_blank">
+                                    <MenuItem as={MenuLink} href="https://www.youtube.com/channel/UCGbXokwBVgCnNWTkOHsEi1g" target="_blank">
                                         YouTube
                                     </MenuItem>
-                                    <MenuItem as={NextLink} href="https://www.twitch.tv/talmerak" target="_blank">
+                                    <MenuItem as={MenuLink} href="https://www.twitch.tv/talmerak" target="_blank">
                                         Twitch
                                     </MenuItem>
-                                    <MenuItem as={NextLink} href="https://twitter.com/talmerak_" target="_blank">
+                                    <MenuItem as={MenuLink} href="https://twitter.com/talmerak_" target="_blank">
                                         Twitter
                                     </MenuItem>
                                 </MenuList>

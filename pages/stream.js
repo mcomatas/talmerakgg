@@ -1,10 +1,13 @@
 import { Box } from '@chakra-ui/react'
+import Layout from '../components/layouts/main'
 
 const Stream = () => {
     return (
-        <Box>
-            THIS IS A STREAM SECTION
-        </Box>
+        <Layout>
+            <Box>
+                THIS IS A STREAM SECTION
+            </Box>
+        </Layout>
     )
 }
 

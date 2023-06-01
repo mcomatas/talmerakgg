@@ -1,10 +1,13 @@
 import { Box } from '@chakra-ui/react'
+import Layout from '../components/layouts/main'
 
 const Videos = () => {
     return (
-        <Box>
-            VIDEOS SECTION
-        </Box>
+        <Layout>
+            <Box>
+                VIDEOS SECTION
+            </Box>
+        </Layout>
     )
 }
 
