@@ -11,7 +11,7 @@ const Logo = () => {
     return (
         <MotionBox
             animate={{
-                //scale: [1, 1.05, 1]
+                scale: [1, 1.05, 1]
             }}
             transition={{
                 duration: 2,

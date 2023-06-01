@@ -39,6 +39,7 @@ const Navbar = props => {
     
     return (
         <Box
+            position="fixed"
             as="nav"
             w="100%"
             style={{backdropFilter: 'blur(15px)'}}

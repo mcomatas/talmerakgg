@@ -12,7 +12,7 @@ const Main = ( { children, router } ) => {
 
             <Navbar />
 
-            <Container maxW="container.lg">
+            <Container maxW="container.lg" p={16}>
                 {children}
             </Container>
         </Box>
