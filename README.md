@@ -1,2 +1,6 @@
-# talmerakgg
-new website made with nextjs and chakraui
+# Talmerak Homepage
+https://talmerak.gg
+---
+## Stack
+- [NextJS](https://nextjs.org/)
+- [ChakraUI](https://chakra-ui.com/)
